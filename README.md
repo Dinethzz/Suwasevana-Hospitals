@@ -1,1 +1,263 @@
 # Dinethzz.github.io-Suwasevana
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suwasevana Hospitals</title>
+    <link rel="icon" href="resources/android-chrome-512x512.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Lato&family=Montserrat&family=Patua+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/171d79be01.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar bg-body-dark bg-light navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="logo">
+            <img src="https://suwasevana.lk/wp-content/uploads/bfi_thumb/logo-web-2-3c5sb0amtgsf4zm7wde29s.png" alt="Logo" width="260" height="78" class="d-inline-block align-text-top nav-brand-title">
+            <div style="color: rgb(105, 132, 5);">Suwasevana Hospitals</div> </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Medical Charges</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Medical Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://www.boldbusiness.com/wp-content/uploads/2017/08/IT-in-healthcare-helps-doctors.jpg" width="100%" height="600px">
+        <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://th.bing.com/th/id/R.1c1bab7054a280f348ee7e7d55fca539?rik=OuvwDB0lLLEUzA&riu=http%3a%2f%2fsuwasevana.lk%2fwp-content%2fuploads%2f2015%2f11%2fsuwasewana-slider-6-home.jpg&ehk=tZ8eQwdaQksTaY6n3nkrhylRWGg08HdrhsLu7hVJXbg%3d&risl=&pid=ImgRaw&r=0" width="100%" height="600px">
+        <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="https://th.bing.com/th/id/R.2d5aaeef47f8e269cc90376cc0ff1049?rik=37BtQ67ALblEFw&riu=http%3a%2f%2fsuwasevana.lk%2fwp-content%2fuploads%2f2015%2f05%2fslider-5.jpg&ehk=S5sApF4%2fqxepqsXpCrdqYX%2fbm3spCpH%2ffm0ajGitAsU%3d&risl=&pid=ImgRaw&r=0" width="100%" height="600px">
+        <div class="text"></div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    <script>
+      
+      let timeoutId = null;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+      
+      showSlides();
+      function currentSlide(index) {
+           slideIndex = index;
+           showSlides();
+      }
+     function plusSlides(step) {
+        
+        if(step < 0) {
+            slideIndex -= 2;
+            
+            if(slideIndex < 0) {
+              slideIndex = slides.length - 1;
+            }
+        }
+        
+        showSlides();
+     }
+      function showSlides() {
+        for(let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          dots[i].classList.remove('active');
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add('active');
+         if(timeoutId) {
+            clearTimeout(timeoutId);
+         }
+        timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
+      }
+    </script>
+  </body>
+</html>
+
+      <!-- Introductory division -->
+      <div class="intro-div">
+        <img src="https://i.pinimg.com/originals/07/98/ad/0798adf9c191e928d86114726aaee261.jpg">
+        <div class="container-fluid intro-text">
+            <h1>Expert healthcare at your fingertips with cutting-edge technology and exceptional medical professionals.</h1>
+            <button type="button" class="">Reach Us</button>
+        </div>
+      </div>
+      
+      <!-- Features division -->
+      <div class="row feature-row">
+        <div class="col-md-4 feature-col">
+            <i class="fa-solid fa-user-nurse fa-beat fa-5x feature-icon"></i>     
+            <p class="feature-des">With so many different specializations within the field of medicine and healthcare, it can be challenging to identify the exact specialist that best fits your unique needs and requirements.</p>
+            <button type="button" class="btn btn-outline-dark btn-md">Find a doctor</button>
+        </div>
+        <div class="col-md-4 feature-col">
+            <i class="fa-regular fa-clock fa-bounce fa-5x feature-icon"></i>
+            <p class="feature-des">Say goodbye to the hassle of worrying about scheduling your next appointment - with our online portal, you can easily book your preferred doctor with just a few clicks.</p>
+            <button type="button" class="btn btn-outline-dark btn-md">Book an appointment</button>
+        </div>
+        <div class="col-md-4 feature-col">
+            <i class="fa-sharp fa-solid fa-stethoscope fa-beat-fade fa-5x feature-icon"></i>
+            <p class="feature-des">If you're unsure which specialist to choose for your healthcare needs, you can easily browse through our comprehensive specialist list or contact us for guidance and assistance.</p>
+            <button type="button" class="btn btn-outline-dark btn-md">Browse</button>
+        </div>
+
+      </div>
+
+      <!-- Testimonials division -->
+      <div class="carousel-div">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h2><i>"The doctors at the hospital are truly skilled professionals, who are dedicated to providing the best possible care for their patients."</i> </h2>
+              <img src="https://th.bing.com/th/id/R.dc7cbabbf501cd216f7cd389e512b4f2?rik=3lJRG0rX7nXU2w&pid=ImgRaw&r=0" class="d-block testimonial-img" alt="...">
+              <p>John Paul, U.S.A</p>
+            </div>
+            <div class="carousel-item">
+              <h2><i>"The nursing staff at the hospital go above and beyond to ensure that patients are comfortable and well-cared for during their stay."</i></h2>
+              <img src="https://cdn.loveandkinship.com/wp-content/uploads/2020/10/mature-man-4.jpg" class="d-block testimonial-img" alt="...">
+               <p>Mr. Tom, Canada</p>
+            </div>
+            <div class="carousel-item">
+              <h2><i>"The care and attention provided by the hospital staff is a reflection of their compassion and dedication to their patients, and is truly admirable."</i></h2>
+              <img src="https://cdn.staging-mysagestore.com/26246855e212ae7d96ac32781048a9af/contents/ckfinder/images/Healthcare_Audio_600x350NEW.jpg" class="d-block testimonial-img" alt="...">
+              <p>Mrs. Gamage, Sri Lanka</p>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+        
+<!-- Why choose us division     -->
+    <div class="row choose-us-div">
+      <h2 class="why-head">Why choose us?</h2>
+      <p class="normal-text"><i>
+       Suwasevana Hospitals is the most accredited hospital in the Sri Lankan healthcare sector. Since 2002, Suwasevana Hospitals has revolutionized the healthcare industry through infrastructure development and advancement of products and services, with a view to deliver healthcare that is on par with global medical standards.
+        </p></i>
+      <div class="col-md-3 choose-col">
+        <div class="card" style="width: 18rem;">
+          <img class="chose-img" src="https://th.bing.com/th/id/R.159992af523f591bc9880bea9ce71cd5?rik=NdjPvRrw4UZxwg&pid=ImgRaw&r=0" class="card-img-top" alt="Doctors">
+          <div class="card-body">
+            <h2>Experienced Doctors</h2>
+            <p class="card-text">The doctors in this hospital are highly skilled and knowledgeable, and are dedicated to providing the best possible care to their patients.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 choose-col">
+        <div class="card" style="width: 18rem;">
+          <img class="chose-img" src="https://www.goodtherapy.org/blog/blog/wp-content/uploads/2016/10/Emergency-room-at-night.jpg" class="card-img-top" alt="Emergency">
+          <div class="card-body">
+            <h2>Emergency Services</h2>
+            <p class="card-text">24/7 life-saving emergency care with advanced technologies and trained medical professionals. Trust us with your critical conditions.</p>
+           </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 choose-col">
+        <div class="card" style="width: 18rem;">
+          <img class="chose-img" src="https://th.bing.com/th/id/R.3e8b128424651fe7808b51ddcc68b266?rik=XMoLndyZJWAhbw&pid=ImgRaw&r=0" class="card-img-top" alt="budget">
+          <div class="card-body">
+            <h2>Best Budget</h2>
+            <p class="card-text">"Our aim is to make high-quality healthcare accessible to all, by providing the best medical treatment at a reasonable and affordable price point for all citizens."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 choose-col">
+        <div class="card" style="width: 18rem;">
+          <img src="https://th.bing.com/th/id/OIP.s2ozz9rAh5ql_75kQCgVwAHaDt?pid=ImgDet&rs=1" class="chose-img card-img-top" alt="care">
+          <div class="card-body">
+            <h2>Optimal Care</h2>
+            <p class="card-text">The hospital's staff is highly trained and experienced, and works collaboratively to provide coordinated and comprehensive care for each patient.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+   <!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<footer>
+<div class="footer">
+<div class="row">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</div>
+
+<div class="row">
+<ul>
+<li><a href="#">Contact us</a></li>
+<li><a href="#">Our Services</a></li>
+<li><a href="#">facilities</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="#">Career</a></li>
+<li><a href="#">Preparing for a Test</a></li>
+</ul>
+</div>
+
+<div class="row">
+Copyright © Suwasevana Hospitals (pvt) Ltd. 2023  - All rights reserved || Designed and Devoloped by Dineth
+</div>
+</div>
+</footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+     
+</body>
+</html>
+
